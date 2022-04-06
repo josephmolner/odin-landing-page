@@ -21,7 +21,7 @@ body {
 .mid-1,
 .bottom {
     background: #ffffff;
-   color: #1F2937;
+    color: #1F2937;
 }
 .mid-2 {
     background: #E5E7EB;
@@ -45,9 +45,9 @@ body {
 }
 button {
     background-color: #3882F6;
-    color:#ffffff;
-    border: solid, 1px, white;
-    border-radius: 15%;
+    color: #F9FAFB;
+    border: 1px solid white;
+    border-radius: 10%;
 }
 .intro {
     font-size: 48px;
@@ -57,10 +57,36 @@ button {
 li {
     text-decoration: none;
     list-style-type: none;
-    
+    display: inline;
+    margin-left: 24px;  
+}
+ul {
+    display: flex;
 }
 .heading {
     font-size: 36px;
     font-weight: bolder;
     color: #1F2937;
+}
+.header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.top {
+    display:flex;
+    justify-content: center;
+    flex: 1;
+    align-content: center;
+}
+.container-l {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.img-1 {
+    display: flex;
+    width: 400px;
+    height: 300px;
 }
