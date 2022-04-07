@@ -12,24 +12,37 @@ body {
 .footer {
     background: #1F2937;
     color: #F9FAF8;
+    display: flex;
 }
-.logo {
-    font-size: 24px;
-    color: #F9FAF8;
 
+.header {
+    justify-content: space-between;
+}
+.header__margin--center {
+    justify-content: space-between;
+    flex: 2;
+}
+.header__logo {
+    font-size: 24px;
+    font-weight: bolder;
+    color: #F9FAF8;
+}
+.header__margin--right,
+.header__margin--left {
+    flex:1;
 }
 .mid-1,
+.mid-2,
 .bottom {
     background: #ffffff;
     color: #1F2937;
-}
-.mid-2 {
-    background: #E5E7EB;
-    color: #1F2937;
+    display: flex;
 }
 .call-container {
     background: #3882F6;
     color: #ffffff;
+    justify-content: center;
+    align-items: center;
 }
 .quote,
 .cred {
@@ -48,7 +61,7 @@ body {
 button {
     background-color: #3882F6;
     color: #F9FAFB;
-    border: 1px solid white;
+    border: none;
     max-width: 100px;
 
 }
@@ -61,11 +74,11 @@ li {
     text-decoration: none;
     list-style-type: none;
     display: inline;
-    margin-left: 24px;  
+    justify-content: space-between;
+    padding-left: 24px;
+
 }
-ul {
-    display: flex;
-}
+
 .heading {
     font-size: 36px;
     font-weight: bolder;
@@ -74,13 +87,12 @@ ul {
     justify-content: center;
 }
 .header {
-    display: flex;
-    justify-content: space-around;
+    
     align-items: center;
+    justify-content: space-between;
     
 }
 .top {
-    display:flex;
     justify-content: center;
     align-items: center;
     flex: 1 1 0%;
@@ -101,13 +113,13 @@ ul {
     flex: 1;
 }
 .middle {
-    flex-shrink: 0;
+    flex: 1;
 }
 
 .img-1 {
     display: flex;
     width: 500px;
-    height: 300px;
+    height: 200px;
 }
 .card {
     display: flex;
