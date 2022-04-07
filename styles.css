@@ -39,8 +39,10 @@ body {
     font-style: italic;
 }
 .cred {
+    display: flex;
     font-size: 24px;
     font-weight: bold;
+    justify-content: flex-end;
 
 }
 button {
@@ -81,21 +83,27 @@ ul {
     display:flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 300px:
+    flex: 1 1 0%;
 }
 .container-l {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    margin-left: 200px;
-    margin-right: 100px;
+    flex: 2;
 }
 
 .container-r {
     display: flex;
-    margin-right:200px;
-
+    flex: 2;
 }
+.one,
+.four {
+    flex: 1;
+}
+.middle {
+    flex-shrink: 0;
+}
+
 .img-1 {
     display: flex;
     width: 500px;
@@ -104,12 +112,24 @@ ul {
 .card {
     display: flex;
     justify-content: center;
-    width: 200;
-    height: 200;
+    width: 250;
+    height: 250;
+    border: solid 5px #3882F6;
+    flex-shrink: 0;
+    gap: 100px;
+   
 }
 
 .container-mid {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   flex-shrink: 0;
+}
+.mid-1 {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
+    flex: 1;
     justify-content: center;
 }
