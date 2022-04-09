@@ -72,6 +72,7 @@ button{
     border-color: #F9FAF8;
     border-style: solid;
 }
+
 li {
     text-decoration: none;
     list-style-type: none;
@@ -121,38 +122,40 @@ li {
     flex:1;
 }
 
-.img-1 {
+.top__img-1 {
     display: flex;
     width: 500px;
     height: 200px;
 }
-.card {
-    display: inline;
+.mid-1 {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
     justify-content: center;
+}
+.mid-1__container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    flex-shrink: 0;
+    gap: 25px;
+ }
+.mid-1__container--img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
+}
+.mid-1__img-card {
+    justify-content: center;
+    align-items: center;
     padding: 50px;
     width: 100px;
     height: 100px;
     border: solid 5px #3882F6;
     border-radius: 10px;
     flex-shrink: 0;
-    gap: 100px;
 }
-
-.container-mid {
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: center;
-   flex-shrink: 0;
-   gap: 100px;
-}
-.mid-1 {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    flex: 1;
-    justify-content: center;
-}
-
 .mid-2{
     background-color: #E5E7EB;
 }
